@@ -1,0 +1,22 @@
+ class Human
+    {
+        eat()
+        { 
+            console.log('is eating'); 
+        }
+        tolive(){}
+    }
+    class Student extends Human
+    {   
+        #name;
+        #surname;
+        #id;
+	tolive()
+        { 
+            console.log('student is living'); 
+        }
+    }
+
+let student = new Student();
+student.eat();
+student.tolive();
